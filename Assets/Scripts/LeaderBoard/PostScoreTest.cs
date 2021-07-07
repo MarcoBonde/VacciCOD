@@ -14,6 +14,7 @@ public class PostScoreTest : MonoBehaviour
 
     public UnityEvent ScoreBoardUpdatedEvent;
     private float timer;
+    private int survivedSeconds;
 
     private void OnEnable()
     {
@@ -30,11 +31,13 @@ public class PostScoreTest : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        int seconds = (int)timer;
+        survivedSeconds = (int)timer;
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            PostNewScore(PlayerName, seconds);
+            PostNewScore(PlayerName, survivedSeconds);
         }
+        */
     }
 
     public void PostNewScore(string playerName, int score)
@@ -92,6 +95,10 @@ public class PostScoreTest : MonoBehaviour
     {
         string tempString = rawString.Substring(1, rawString.Length - 2);
         return tempString;
+    }
+    public void gameOver()
+    {
+        PostNewScore(PlayerName, survivedSeconds);
     }
 }
 

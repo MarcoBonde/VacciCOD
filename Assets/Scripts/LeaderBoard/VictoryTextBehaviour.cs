@@ -23,6 +23,7 @@ public class VictoryTextBehaviour : MonoBehaviour
     void WriteScore() {
         if (PostScoreTest.Singleton.ScoreBoardEntries.Count > 1)
         {
+            MyText.enabled = true;
             if (PostScoreTest.Singleton.ScoreBoardEntries[0].PlayerName == PostScoreTest.Singleton.PlayerName)
             {
                 MyText.text = victoryString + secondsToMinutes(PostScoreTest.Singleton.ScoreBoardEntries[0].PlayerScore);

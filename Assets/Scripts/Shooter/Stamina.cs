@@ -35,7 +35,7 @@ public class Stamina : MonoBehaviour
     }
 
    
-    void Update()
+    void FixedUpdate()
     {
         if(currentStamina > 10)
         {
