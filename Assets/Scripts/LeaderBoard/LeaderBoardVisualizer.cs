@@ -38,8 +38,20 @@ public class LeaderBoardVisualizer : MonoBehaviour
         {
             RectTransform tempText = Instantiate(ScoreEntryPrefab, ContentBoxTransform);
             tempText.anchoredPosition = new Vector2(0, -(i * ScoreEntryPrefab.sizeDelta.y));
-            tempText.GetComponent<Text>().text = PostScoreTest.Singleton.ScoreBoardEntries[i].PlayerName + " / " + PostScoreTest.Singleton.ScoreBoardEntries[i].PlayerScore.ToString();
+            tempText.GetComponent<Text>().text = PostScoreTest.Singleton.ScoreBoardEntries[i].PlayerName + " / " + secondsToMinutes(PostScoreTest.Singleton.ScoreBoardEntries[i].PlayerScore);
             currentlyInstantiatedTexts.Add(tempText.gameObject);
         }
+    }
+    string secondsToMinutes(int seconds)
+    {
+        int minutes = 0;
+        if (seconds > 59)
+        {
+            minutes = seconds / 60;
+            seconds = seconds % 60;
+        }
+
+
+        return minutes + " min e " + seconds + " s";
     }
 }
