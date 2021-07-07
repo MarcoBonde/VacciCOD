@@ -26,7 +26,7 @@ public class Spawner : MonoBehaviour
     
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T)) //testing
         {
             SpawnEnemy();
         }
