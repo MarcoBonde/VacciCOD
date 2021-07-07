@@ -29,7 +29,7 @@ public class VictoryTextBehaviour : MonoBehaviour
             }
             else
             {
-                MyText.text = lossString + secondsToMinutes(PostScoreTest.Singleton.Score) + "\n Il campione è sopravvissuto: "+secondsToMinutes(PostScoreTest.Singleton.ScoreBoardEntries[0].PlayerScore) + "\nProva a raggiungerlo!";
+                MyText.text = lossString + secondsToMinutes(PostScoreTest.Singleton.Score) + "\nIl campione è sopravvissuto: "+secondsToMinutes(PostScoreTest.Singleton.ScoreBoardEntries[0].PlayerScore) + "\nProva a raggiungerlo!";
             }
         }
     }
