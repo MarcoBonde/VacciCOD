@@ -18,7 +18,7 @@ public class HealthBarUI : MonoBehaviour
 
     private void Update()
     {
-        //CurrentHealth = Player.Health;
+        CurrentHealth = Player.health;
         HealthBar.fillAmount = CurrentHealth / MaxHealth;
     }
 }

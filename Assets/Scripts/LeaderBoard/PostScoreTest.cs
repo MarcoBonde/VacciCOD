@@ -19,12 +19,14 @@ public class PostScoreTest : MonoBehaviour
     private void OnEnable()
     {
         Singleton = this;
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
         timer=0f;
+        PlayerController.singleton.gameOverEvent.AddListener(gameOver);
     }
 
     // Update is called once per frame

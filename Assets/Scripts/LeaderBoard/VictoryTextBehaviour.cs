@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class VictoryTextBehaviour : MonoBehaviour
 {
+    public GameObject VictoryTextObj;
     public Text MyText;
     string victoryString = "Complimenti sei quello che è sopravvisuto più a lungo! Sei sopravvissuto: ";
     string lossString = "Sei morto! Sei sopravvissuto: ";
@@ -23,7 +24,7 @@ public class VictoryTextBehaviour : MonoBehaviour
     void WriteScore() {
         if (PostScoreTest.Singleton.ScoreBoardEntries.Count > 1)
         {
-            MyText.enabled = true;
+            VictoryTextObj.SetActive(true);
             if (PostScoreTest.Singleton.ScoreBoardEntries[0].PlayerName == PostScoreTest.Singleton.PlayerName)
             {
                 MyText.text = victoryString + secondsToMinutes(PostScoreTest.Singleton.ScoreBoardEntries[0].PlayerScore);

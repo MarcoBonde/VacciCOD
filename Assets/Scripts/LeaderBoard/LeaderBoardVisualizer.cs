@@ -7,6 +7,7 @@ public class LeaderBoardVisualizer : MonoBehaviour
 {
     public RectTransform ContentBoxTransform;
     public RectTransform ScoreEntryPrefab;
+    public GameObject ScrollView;
 
     public List<GameObject> currentlyInstantiatedTexts = new List<GameObject>();
 
@@ -24,6 +25,7 @@ public class LeaderBoardVisualizer : MonoBehaviour
 
     public void UpdateScoreVisualization()
     {
+        ScrollView.SetActive(true);
         int numberOfPlayerInBoard = PostScoreTest.Singleton.ScoreBoardEntries.Count;
 
         ContentBoxTransform.sizeDelta = new Vector2(ContentBoxTransform.sizeDelta.x, ScoreEntryPrefab.sizeDelta.y * numberOfPlayerInBoard);
