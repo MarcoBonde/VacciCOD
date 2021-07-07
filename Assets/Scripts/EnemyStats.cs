@@ -7,14 +7,26 @@ public class EnemyStats : MonoBehaviour
     private float scoreAmount = 10;
 
     GameController gameController;
-
+    Spawner spawn;
     private void Start()
     {
-       // gameController = GameObject.FindGameObjectsWithTag("GameController").GetComponent<GameController>();
+        // gameController = GameObject.FindGameObjectsWithTag("GameController").GetComponent<GameController>();
+
+       /* maxHealth = 100;
+        currHealth = maxHealth;
+
+        maxStamina = 100;
+        currStamina = maxStamina;*/
     }
 
-   /* public override void Die()
+    private void Update()
     {
-        gameController.AddScore();
-    }*/
+       // CheckHealth();
+    }
+
+    /* public override void Die()
+     {
+         gameController.AddScore();
+         Destroy(gameObject);
+     }*/
 }
