@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     NavMeshAgent agent;
 
     GameObject target;
+    public float health = 100f;
+
 
     private void Start()
     {
@@ -42,5 +44,15 @@ public class Enemy : MonoBehaviour
     {
         agent.isStopped = true;
     }
-
+    private void OnCollisionEnter(Collision coll)
+    {
+        
+        if (coll.collider.CompareTag("Bullet")) {
+            health -= 20f;
+            if (health < 1)
+            {
+                Destroy(this);
+            }
+        }
+    }
 }

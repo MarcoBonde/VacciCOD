@@ -26,11 +26,14 @@ public class PlayerController : MonoBehaviour
             print("E prendo Danno");
             isHitten = true;
             health -= 20f;
+            if (health < 1)
+            {
+                gameOverRoutine();
+            }
+            print("salute: " + health);
             Invoke("isHittenFalse", invincibleTime);
         }
-        if (health < 1) {
-            gameOverRoutine();
-        }
+
     }
     public void gameOverRoutine() {
         //ferma il gioco
