@@ -60,7 +60,7 @@ public class GunScript : MonoBehaviour
     void Shoot()
     {
         shootingParticle.Play();
-        shootingSound.Play();
+        //shootingSound.Play();
         print("sparo");
         readyToShoot = false;
         float x = Random.Range(-spread, spread);
