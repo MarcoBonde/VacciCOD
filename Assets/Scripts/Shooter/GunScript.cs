@@ -59,8 +59,8 @@ public class GunScript : MonoBehaviour
     void Shoot()
     {
         readyToShoot = false;
-        float x = Random.Range(-spread, spread);
-        float y = Random.Range(-spread, spread);
+        float x = Random.RandomRange(-spread, spread);
+        float y = Random.RandomRange(-spread, spread);
         Vector3 direction = _playerCam.transform.forward + new Vector3(x, y, 0);
         //raycast
         if (Physics.Raycast(_playerCam.transform.position, _playerCam.transform.forward, out _rayhit, _maxdistance, definedLayer)) {
