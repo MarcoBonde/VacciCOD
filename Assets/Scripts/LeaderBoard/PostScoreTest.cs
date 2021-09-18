@@ -34,7 +34,7 @@ public class PostScoreTest : MonoBehaviour
     {
         timer += Time.deltaTime;
         survivedSeconds = (int)timer;
-        /*
+        /* Codice da chiamare per far comparire la leaderboard
         if (Input.GetKeyDown(KeyCode.Space))
         {
             PostNewScore(PlayerName, survivedSeconds);
