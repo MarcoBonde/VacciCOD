@@ -16,13 +16,11 @@ public class GunScript : MonoBehaviour
     public float reloadTime;
     public float shootingInterval;
     public float spread;
+    public int damage;
 
     [SerializeField] Camera _playerCam;
 
     RaycastHit _rayhit;
-    LayerMask definedLayer;
-
-    public Transform spawnpoint;
 
 
     private void Awake()
@@ -58,13 +56,19 @@ public class GunScript : MonoBehaviour
 
     void Shoot()
     {
+        print("sparo");
         readyToShoot = false;
-        float x = Random.RandomRange(-spread, spread);
-        float y = Random.RandomRange(-spread, spread);
+        float x = Random.Range(-spread, spread);
+        float y = Random.Range(-spread, spread);
         Vector3 direction = _playerCam.transform.forward + new Vector3(x, y, 0);
         //raycast
-        if (Physics.Raycast(_playerCam.transform.position, _playerCam.transform.forward, out _rayhit, _maxdistance, definedLayer)) {
+        if (Physics.Raycast(_playerCam.transform.position, _playerCam.transform.forward, out _rayhit, _maxdistance)) {
             print(_rayhit.collider.name);
+            Enemy enemy = _rayhit.transform.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);   
+            }
         }
         bulletsLeft--;
         Invoke("ReadyToShoot", shootingInterval);

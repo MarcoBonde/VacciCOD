@@ -12,12 +12,15 @@ public class Enemy : MonoBehaviour
     GameObject target;
 
     private Animator animator;
+    private float health;
+
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         target = GameObject.FindGameObjectWithTag("Player");
+        health = 50;
     }
 
     private void Update()
@@ -48,4 +51,14 @@ public class Enemy : MonoBehaviour
         agent.isStopped = true;
     }
 
+    public void TakeDamage(int amount) {
+        health -= amount;
+        if (health <= 0f) {
+            Die();
+        }
+
+    }
+    void Die() {
+        Destroy(this);
+    }
 }
