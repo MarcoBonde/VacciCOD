@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 5400000}
   - component: {fileID: 8200000}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FPSController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 2000000}
   - component: {fileID: 8100000}
   - component: {fileID: 12474086}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -433,9 +433,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2839946354467224660, guid: 880f0f7bd22eabf4e8eb9000ae0b908d, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839946354467224664, guid: 880f0f7bd22eabf4e8eb9000ae0b908d, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2839946354467224668, guid: 880f0f7bd22eabf4e8eb9000ae0b908d, type: 3}
       propertyPath: m_Name
       value: Vaccine Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839946354467224668, guid: 880f0f7bd22eabf4e8eb9000ae0b908d, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2839946354467224670, guid: 880f0f7bd22eabf4e8eb9000ae0b908d, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224533318701052672, guid: 880f0f7bd22eabf4e8eb9000ae0b908d, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5539336017272221960, guid: 880f0f7bd22eabf4e8eb9000ae0b908d, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 880f0f7bd22eabf4e8eb9000ae0b908d, type: 3}

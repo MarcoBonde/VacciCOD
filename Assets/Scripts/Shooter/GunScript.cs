@@ -74,7 +74,8 @@ public class GunScript : MonoBehaviour
             }
         }
         bulletsLeft--;
-        GameObject siringe = Instantiate(impactSiringe, _rayhit.point, Quaternion.LookRotation(_rayhit.normal));
+        GameObject siringe = Instantiate(impactSiringe, _rayhit.point, _playerCam.transform.rotation);
+        siringe.transform.parent = _rayhit.transform;
         Destroy(siringe, 1f);
         Invoke("ReadyToShoot", shootingInterval);
     }
