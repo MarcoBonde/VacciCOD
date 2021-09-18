@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
 
     GameObject target;
 
+    private Animator animator;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
