@@ -5244,8 +5244,8 @@ Transform:
   - {fileID: 1196740326}
   - {fileID: 267237934}
   - {fileID: 1204479708}
-  - {fileID: 58218592}
   - {fileID: 185208608}
+  - {fileID: 58218592}
   - {fileID: 1790766733}
   - {fileID: 1721475935}
   - {fileID: 1330382577}
@@ -5257,7 +5257,6 @@ Transform:
   - {fileID: 733338069}
   - {fileID: 263715485}
   - {fileID: 2047271714}
-  - {fileID: 773963289}
   - {fileID: 558228956}
   - {fileID: 1700775727}
   - {fileID: 1532523301}
@@ -5290,9 +5289,9 @@ Transform:
   - {fileID: 469247494}
   - {fileID: 477094495}
   - {fileID: 1971886620}
-  - {fileID: 228495702}
   - {fileID: 20063260}
   - {fileID: 1936244409}
+  - {fileID: 228495702}
   - {fileID: 92333475}
   - {fileID: 1095327298}
   - {fileID: 479552846}
@@ -5304,6 +5303,7 @@ Transform:
   - {fileID: 1870597412}
   - {fileID: 449915048}
   - {fileID: 1663316183}
+  - {fileID: 773963289}
   - {fileID: 140777578}
   - {fileID: 1666811320}
   - {fileID: 1488891199}
@@ -16265,6 +16265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b9513f005e0a9d4292f42e81f06fd5a, type: 3}
+--- !u!1 &741477107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5506112815461901870, guid: 3b9513f005e0a9d4292f42e81f06fd5a, type: 3}
+  m_PrefabInstance: {fileID: 741477106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &745919469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16616,7 +16621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba44d45ecc215f47b03b0c97440b0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goCreate: {fileID: 5506112815461901870, guid: 3b9513f005e0a9d4292f42e81f06fd5a, type: 3}
+  goCreate: {fileID: 741477107}
   fTimeIntervals: 4
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
 --- !u!1001 &769034600
@@ -28566,7 +28571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba44d45ecc215f47b03b0c97440b0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goCreate: {fileID: 5506112815461901870, guid: 3b9513f005e0a9d4292f42e81f06fd5a, type: 3}
+  goCreate: {fileID: 741477107}
   fTimeIntervals: 4
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
 --- !u!1001 &1474451706
@@ -35548,7 +35553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba44d45ecc215f47b03b0c97440b0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goCreate: {fileID: 5506112815461901870, guid: 3b9513f005e0a9d4292f42e81f06fd5a, type: 3}
+  goCreate: {fileID: 741477107}
   fTimeIntervals: 4
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
 --- !u!1001 &1870597411
@@ -37183,7 +37188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fba44d45ecc215f47b03b0c97440b0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goCreate: {fileID: 5506112815461901870, guid: 3b9513f005e0a9d4292f42e81f06fd5a, type: 3}
+  goCreate: {fileID: 741477107}
   fTimeIntervals: 4
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
 --- !u!1001 &1958051143
