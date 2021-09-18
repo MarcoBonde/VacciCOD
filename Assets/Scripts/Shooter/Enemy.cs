@@ -12,9 +12,12 @@ public class Enemy : MonoBehaviour
     GameObject target;
     public float health = 100f;
 
+    private Animator animator;
+
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         target = GameObject.FindGameObjectWithTag("Player");
     }
@@ -24,11 +27,13 @@ public class Enemy : MonoBehaviour
         float dist = Vector3.Distance(transform.position, target.transform.position);
         if (dist < stoppingDistance)
         {
+            animator.SetBool("IsMoving", false);
             StopEnemy();
             //target.GetComponent<CharacterStats>;
         }
         else
         {
+            animator.SetBool("IsMoving", true);
             GoToTarget();
         }
         GoToTarget();
