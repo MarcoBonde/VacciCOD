@@ -14,7 +14,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &6883142324690781490
 CapsuleCollider:
@@ -30,6 +30,19 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &959031376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7273349533767877790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98863ff715085f849a977ba386286d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoppingDistance: 2
 --- !u!195 &959031379
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -52,19 +65,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &959031376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7273349533767877790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98863ff715085f849a977ba386286d95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stoppingDistance: 2
 --- !u!1001 &6946253094542215920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74,7 +74,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 330500823846571630, guid: f198d14b10c72fa499f7c60b17fbc603, type: 3}
       propertyPath: m_Name
-      value: Enemy Variant
+      value: Zombie1
       objectReference: {fileID: 0}
     - target: {fileID: 330500823846571630, guid: f198d14b10c72fa499f7c60b17fbc603, type: 3}
       propertyPath: m_TagString
