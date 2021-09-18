@@ -22,18 +22,21 @@ public class GunScript : MonoBehaviour
     RaycastHit _rayhit;
     LayerMask definedLayer;
 
+    public Transform spawnpoint;
+
 
     private void Awake()
     {
         isShooting = false;
         isReloading = false;
+        readyToShoot = true;
         reloadTime = 2f;
         bulletsLeft = sizeMagazine;
 
 
     }
 
-    private void Update()
+    public void Update()
     {
         if (automatic)
         {
@@ -41,7 +44,7 @@ public class GunScript : MonoBehaviour
         }
         else
         {
-            Input.GetKeyDown(KeyCode.Mouse0);
+            isShooting = Input.GetKeyDown(KeyCode.Mouse0);
         }
 
         //Reload
@@ -61,15 +64,14 @@ public class GunScript : MonoBehaviour
         Vector3 direction = _playerCam.transform.forward + new Vector3(x, y, 0);
         //raycast
         if (Physics.Raycast(_playerCam.transform.position, _playerCam.transform.forward, out _rayhit, _maxdistance, definedLayer)) {
-            Debug.Log(_rayhit.collider.name);
-        } 
-
+            print(_rayhit.collider.name);
+        }
         bulletsLeft--;
         Invoke("ReadyToShoot", shootingInterval);
     }
 
     void ReadyToShoot() {
-
+        readyToShoot = true;
     }
     void Reload() {
         isReloading = true;

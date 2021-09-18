@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &657509404871608000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2839946354467224668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1dffc800f7f8d4da37468498031155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  automatic: 0
+  sizeMagazine: 20
+  _maxdistance: 100
+  reloadTime: 1
+  shootingInterval: 0.1
+  spread: 10
+  _playerCam: {fileID: 0}
 --- !u!1001 &2839946354467191548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73,3 +92,8 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3f6c9f49173da244ea411e01a1afa853, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 917380f913869f74e806b33aa65452f4, type: 3}
+--- !u!1 &2839946354467224668 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 917380f913869f74e806b33aa65452f4, type: 3}
+  m_PrefabInstance: {fileID: 2839946354467191548}
+  m_PrefabAsset: {fileID: 0}
