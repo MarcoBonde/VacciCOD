@@ -22,6 +22,9 @@ public class GunScript : MonoBehaviour
     RaycastHit _rayhit;
     LayerMask definedLayer;
 
+    public GameObject bullet;
+    public Transform bulletSpawner;
+
 
     private void Awake()
     {
