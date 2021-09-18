@@ -22,6 +22,8 @@ public class GunScript : MonoBehaviour
 
     RaycastHit _rayhit;
 
+    public ParticleSystem shootingParticle;
+    public GameObject impactSiringe;
 
     private void Awake()
     {
@@ -56,6 +58,7 @@ public class GunScript : MonoBehaviour
 
     void Shoot()
     {
+        shootingParticle.Play();
         print("sparo");
         readyToShoot = false;
         float x = Random.Range(-spread, spread);
@@ -71,6 +74,8 @@ public class GunScript : MonoBehaviour
             }
         }
         bulletsLeft--;
+        GameObject siringe = Instantiate(impactSiringe, _rayhit.point, Quaternion.LookRotation(_rayhit.normal));
+        Destroy(siringe, 1f);
         Invoke("ReadyToShoot", shootingInterval);
     }
 
