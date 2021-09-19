@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     bool isHitten;
     public float invincibleTime;
     public UnityEvent gameOverEvent;
+    //private BloodEffect = null;
 
     private void OnEnable()
     {
@@ -17,6 +19,11 @@ public class PlayerController : MonoBehaviour
         isHitten = false;
     }
 
+    /*void UpdateHealth()
+    {
+        Color splatterAlpha = redSplatterImage.color;
+        splatterAlpha.a = 1 - health / health;
+    }*/
 
     void OnCollisionEnter(Collision coll)
     {
