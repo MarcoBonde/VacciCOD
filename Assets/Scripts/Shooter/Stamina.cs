@@ -36,7 +36,7 @@ public class Stamina : MonoBehaviour
             }
             player.m_RunSpeed = 10f;
             player.m_WalkSpeed = 5f;
-        } else if (currentStamina <= 1)
+        } else
         {
             player.m_IsWalking = true;
             staminaBar.value = currentStamina;
@@ -63,7 +63,7 @@ public class Stamina : MonoBehaviour
 
     private IEnumerator RegenStamina()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
 
         while (currentStamina < maxStamina)
         {

@@ -10,7 +10,7 @@ public class HandleTextFile:MonoBehaviour
     public static string userNameString;
 
     private void Awake() {
-        path = "Assets/Resources/setting.txt";
+        path = "VacciCOD_Data/Resources/setting.txt";
         if (!File.Exists(path)) {
             File.WriteAllText(path, "");
         }
@@ -65,7 +65,7 @@ public class HandleTextFile:MonoBehaviour
         WriteString(stringToWrite);
     }
     public static string getPlayerName() {
-        path = "Assets/Resources/setting.txt";
+        path = "VacciCOD_Data / Resources / setting.txt";
         StreamReader reader = new StreamReader(path);
         fileContent = reader.ReadToEnd();
         reader.Close();

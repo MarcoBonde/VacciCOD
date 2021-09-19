@@ -26,6 +26,7 @@ public class GunScript : MonoBehaviour
     public ParticleSystem shootingParticle;
     public GameObject impactSiringe;
     public AudioSource shootingSound;
+    public AudioSource rechargeSound;
     public Text ammoText;
 
     private void Awake()
@@ -61,7 +62,7 @@ public class GunScript : MonoBehaviour
     void Shoot()
     {
         shootingParticle.Play();
-        //shootingSound.Play();
+        shootingSound.Play();
         print("sparo");
         readyToShoot = false;
         float x = Random.Range(-spread, spread);
@@ -104,7 +105,7 @@ public class GunScript : MonoBehaviour
         gameObject.transform.Rotate(0, 0, 40f);
     }
     void Reloading() {
-
+        rechargeSound.Play();
         gameObject.transform.Rotate(0, 0, -40f);
         bulletsLeft = sizeMagazine;
         UpdateAmmo();

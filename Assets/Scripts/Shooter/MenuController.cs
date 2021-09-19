@@ -21,4 +21,7 @@ public class MenuController : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Reload() {
+        Invoke("MainMenu", 30f);
+    }
 }
