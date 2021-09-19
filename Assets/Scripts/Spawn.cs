@@ -23,7 +23,7 @@ public class Spawn : MonoBehaviour
     void Start()
     {
         fTimer = fTimeIntervals;
-        InvokeRepeating("AumgentMaxChildren", timeAugmentMaxChildren, timeAugmentMaxChildren);
+        InvokeRepeating("AumgentMaxChildren", 0.1f, timeAugmentMaxChildren);
     }
 
     // Update is called once per frame

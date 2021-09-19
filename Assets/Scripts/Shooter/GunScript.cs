@@ -94,6 +94,7 @@ public class GunScript : MonoBehaviour
         readyToShoot = true;
     }
     void Reload() {
+        rechargeSound.Play();
         isReloading = true;
         if (bulletsLeft != 0)
         {
