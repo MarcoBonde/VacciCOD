@@ -12795,12 +12795,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goCreate: {fileID: 7273349533767877790, guid: 48816c3795bad4f4987f47308dedfcf9, type: 3}
-  fTimeIntervals: 10
+  fTimeIntervals: 5
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
   enemyParent: {fileID: 269760865}
-  maxChildren: 7
-  timeAugmentMaxChildren: 15
-  childrenIncrement: 1
+  maxChildren: 10
+  timeAugmentMaxChildren: 12
+  childrenIncrement: 2
 --- !u!1001 &506236043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18438,12 +18438,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goCreate: {fileID: 7273349533767877790, guid: 48816c3795bad4f4987f47308dedfcf9, type: 3}
-  fTimeIntervals: 10
+  fTimeIntervals: 5
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
   enemyParent: {fileID: 269760865}
-  maxChildren: 7
-  timeAugmentMaxChildren: 15
-  childrenIncrement: 1
+  maxChildren: 10
+  timeAugmentMaxChildren: 12
+  childrenIncrement: 2
 --- !u!1001 &769034600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20475,12 +20475,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goCreate: {fileID: 7273349533767877790, guid: 48816c3795bad4f4987f47308dedfcf9, type: 3}
-  fTimeIntervals: 10
+  fTimeIntervals: 5
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
   enemyParent: {fileID: 269760865}
-  maxChildren: 7
-  timeAugmentMaxChildren: 15
-  childrenIncrement: 1
+  maxChildren: 10
+  timeAugmentMaxChildren: 12
+  childrenIncrement: 2
 --- !u!1001 &892486548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22856,12 +22856,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goCreate: {fileID: 7273349533767877790, guid: 48816c3795bad4f4987f47308dedfcf9, type: 3}
-  fTimeIntervals: 10
+  fTimeIntervals: 5
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
   enemyParent: {fileID: 269760865}
-  maxChildren: 7
-  timeAugmentMaxChildren: 15
-  childrenIncrement: 1
+  maxChildren: 10
+  timeAugmentMaxChildren: 12
+  childrenIncrement: 2
 --- !u!1001 &1035759386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26440,12 +26440,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goCreate: {fileID: 7273349533767877790, guid: 48816c3795bad4f4987f47308dedfcf9, type: 3}
-  fTimeIntervals: 10
+  fTimeIntervals: 5
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
   enemyParent: {fileID: 269760865}
-  maxChildren: 7
-  timeAugmentMaxChildren: 15
-  childrenIncrement: 1
+  maxChildren: 10
+  timeAugmentMaxChildren: 12
+  childrenIncrement: 2
 --- !u!1001 &1186922348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30374,9 +30374,9 @@ RectTransform:
   m_Father: {fileID: 623731827}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 555, y: -314}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1382575820 stripped
@@ -34832,12 +34832,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goCreate: {fileID: 7273349533767877790, guid: 48816c3795bad4f4987f47308dedfcf9, type: 3}
-  fTimeIntervals: 10
+  fTimeIntervals: 5
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
   enemyParent: {fileID: 269760865}
-  maxChildren: 7
-  timeAugmentMaxChildren: 15
-  childrenIncrement: 1
+  maxChildren: 10
+  timeAugmentMaxChildren: 12
+  childrenIncrement: 2
 --- !u!1001 &1581134877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43011,12 +43011,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goCreate: {fileID: 7273349533767877790, guid: 48816c3795bad4f4987f47308dedfcf9, type: 3}
-  fTimeIntervals: 10
+  fTimeIntervals: 5
   v4SpawnPosJitter: {x: 0, y: 0, z: 0}
   enemyParent: {fileID: 269760865}
-  maxChildren: 7
-  timeAugmentMaxChildren: 15
-  childrenIncrement: 1
+  maxChildren: 10
+  timeAugmentMaxChildren: 12
+  childrenIncrement: 2
 --- !u!1001 &1958051143
 PrefabInstance:
   m_ObjectHideFlags: 0

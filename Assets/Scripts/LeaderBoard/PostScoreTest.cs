@@ -19,7 +19,6 @@ public class PostScoreTest : MonoBehaviour
     private void OnEnable()
     {
         Singleton = this;
-        PlayerName = HandleTextFile.getPlayerName();
     }
 
     // Start is called before the first frame update
@@ -27,6 +26,7 @@ public class PostScoreTest : MonoBehaviour
     {
         timer=0f;
         PlayerController.singleton.gameOverEvent.AddListener(gameOver);
+        PlayerName = HandleTextFile.getPlayerName();
     }
 
     // Update is called once per frame

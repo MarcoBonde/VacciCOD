@@ -65,7 +65,7 @@ public class HandleTextFile:MonoBehaviour
         WriteString(stringToWrite);
     }
     public static string getPlayerName() {
-        path = "VacciCOD_Data / Resources / setting.txt";
+        path = "VacciCOD_Data/Resources/setting.txt";
         StreamReader reader = new StreamReader(path);
         fileContent = reader.ReadToEnd();
         reader.Close();
