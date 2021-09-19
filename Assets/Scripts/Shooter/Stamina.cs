@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
@@ -7,25 +6,18 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class Stamina : MonoBehaviour
 {
     public Slider staminaBar;
-
     public int maxStamina = 100;
     private float currentStamina;
-
-
     private WaitForSeconds regenTick = new WaitForSeconds(0.01f);
     private Coroutine regen;
 
     public static Stamina instance;
-
     public FirstPersonController player;
-
 
     private void Awake()
     {
         instance = this;
     }
-
-
 
     void Start()
     {
@@ -33,7 +25,6 @@ public class Stamina : MonoBehaviour
         staminaBar.maxValue = maxStamina;
         staminaBar.value = maxStamina;
     }
-
    
     void FixedUpdate()
     {
@@ -53,7 +44,6 @@ public class Stamina : MonoBehaviour
             player.m_WalkSpeed = 5f; 
         }
     }
-
 
     public void UseStamina(float amount)
     {
