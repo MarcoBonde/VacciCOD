@@ -2352,6 +2352,9 @@ MonoBehaviour:
   gameOverEvent:
     m_PersistentCalls:
       m_Calls: []
+  spawners: {fileID: 0}
+  blood: {fileID: 0}
+  gun: {fileID: 0}
 --- !u!1 &1888561474
 GameObject:
   m_ObjectHideFlags: 0
