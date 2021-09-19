@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     bool isHitten;
     public float invincibleTime;
     public UnityEvent gameOverEvent;
-
+    public GameObject spawners;
     private void OnEnable()
     {
         singleton = this;
@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
     }
     public void gameOverRoutine() {
         //ferma il gioco
+        GetComponent<CapsuleCollider>().enabled=false;
+        spawners.SetActive(false);
         gameOverEvent.Invoke();
     }
     public void isHittenFalse() {
