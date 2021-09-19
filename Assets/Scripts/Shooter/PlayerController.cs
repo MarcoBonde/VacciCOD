@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public GameObject spawners;
     public Image blood;
     private float alpha;
-    private float lastReset;
+    public GameObject gun;
     private void OnEnable()
     {
         singleton = this;

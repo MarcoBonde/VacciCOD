@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunScript : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class GunScript : MonoBehaviour
     public ParticleSystem shootingParticle;
     public GameObject impactSiringe;
     public AudioSource shootingSound;
+    public Text ammoText;
 
     private void Awake()
     {
@@ -33,8 +35,6 @@ public class GunScript : MonoBehaviour
         readyToShoot = true;
         reloadTime = 2f;
         bulletsLeft = sizeMagazine;
-
-
     }
 
     public void Update()
@@ -50,8 +50,9 @@ public class GunScript : MonoBehaviour
 
         //Reload
         if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < sizeMagazine && !isReloading)
+        {
             Reload();
-
+        }
         //Shoot
         if (isShooting && bulletsLeft > 0 && !isReloading && readyToShoot)
             Shoot();
@@ -76,9 +77,15 @@ public class GunScript : MonoBehaviour
             }
         }
         bulletsLeft--;
+        
         GameObject siringe = Instantiate(impactSiringe, _rayhit.point, _playerCam.transform.rotation);
         siringe.transform.parent = _rayhit.transform;
         Destroy(siringe, 1f);
+        if (bulletsLeft == 0)
+        {
+            Invoke("RotateGun", 0.2f);
+        }
+        UpdateAmmo();
         Invoke("ReadyToShoot", shootingInterval);
     }
 
@@ -87,14 +94,24 @@ public class GunScript : MonoBehaviour
     }
     void Reload() {
         isReloading = true;
-
+        if (bulletsLeft != 0)
+        {
+            RotateGun();
+        }
         Invoke("Reloading", reloadTime);
-
-        isReloading = false;
-
     }
-
+    void RotateGun() {
+        gameObject.transform.Rotate(0, 0, 40f);
+    }
     void Reloading() {
+
+        gameObject.transform.Rotate(0, 0, -40f);
         bulletsLeft = sizeMagazine;
+        UpdateAmmo();
+        isReloading = false;
+    }
+    void UpdateAmmo()
+    {
+        ammoText.text = "" + bulletsLeft;
     }
 }
